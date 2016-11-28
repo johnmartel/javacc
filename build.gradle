@@ -1,5 +1,15 @@
 plugins {
-  id "ca.coglinc.javacc" version "2.3.1"
+    id "ca.coglinc.javacc" version "2.4.0"
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    javacc 'net.java.dev.javacc:javacc:4.1'
+
+    testCompile 'junit:junit:3.8.1'
 }
 
 apply plugin: 'java'
