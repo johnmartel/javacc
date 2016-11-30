@@ -1,0 +1,22 @@
+plugins { id "ca.coglinc.javacc" version "2.4.0" }
+
+apply plugin: 'ca.coglinc.javacc'
+apply plugin: 'java'
+apply plugin: 'application'
+
+repositories { mavenCentral() }
+
+compileJjtree {
+	inputDirectory 	= projectDir
+	outputDirectory = projectDir
+}
+compileJavacc {
+	inputDirectory 	= projectDir
+	outputDirectory = projectDir
+}
+
+task exec (type: JavaExec) {
+	main = "Main"
+	classpath = sourceSets.main.runtimeClasspath
+	args = ['Hello.idl']
+}
