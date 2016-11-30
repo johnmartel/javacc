@@ -1,4 +1,7 @@
 classes/
 build/
+test/
 test.tmp/
 src/main/generated-sources/
+.gradle/
+target/
