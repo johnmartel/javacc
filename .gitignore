@@ -1,2 +1,4 @@
 classes/
 build/
+test.tmp/
+src/main/generated-sources/
