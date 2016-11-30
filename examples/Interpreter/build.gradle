@@ -1,0 +1,19 @@
+plugins {
+  id "ca.coglinc.javacc" version "2.4.0"
+}
+
+apply plugin: 'ca.coglinc.javacc'
+apply plugin: 'java'
+
+repositories {
+	mavenCentral()
+}
+
+compileJjtree {
+	inputDirectory = projectDir
+	outputDirectory = projectDir
+}
+compileJavacc {
+	inputDirectory = projectDir
+	outputDirectory = projectDir
+}
