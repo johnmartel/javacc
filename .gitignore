@@ -5,3 +5,4 @@ test.tmp/
 src/main/generated-sources/
 .gradle/
 target/
+/bin/
